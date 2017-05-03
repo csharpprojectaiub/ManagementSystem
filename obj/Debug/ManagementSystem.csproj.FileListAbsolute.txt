@@ -1,0 +1,55 @@
+H:\C Sharp\ManagementSystem\bin\Debug\ManagementSystem.exe.config
+H:\C Sharp\ManagementSystem\bin\Debug\ManagementSystem.exe
+H:\C Sharp\ManagementSystem\bin\Debug\ManagementSystem.pdb
+H:\C Sharp\ManagementSystem\bin\Debug\Bunifu_UI_v1.4.dll
+H:\C Sharp\ManagementSystem\bin\Debug\MetroFramework.Design.dll
+H:\C Sharp\ManagementSystem\bin\Debug\MetroFramework.dll
+H:\C Sharp\ManagementSystem\bin\Debug\MetroFramework.Fonts.dll
+H:\C Sharp\ManagementSystem\obj\Debug\ManagementSystem.Properties.Resources.resources
+H:\C Sharp\ManagementSystem\obj\Debug\ManagementSystem.csproj.GenerateResource.Cache
+H:\C Sharp\ManagementSystem\obj\Debug\ManagementSystem.exe
+H:\C Sharp\ManagementSystem\obj\Debug\ManagementSystem.pdb
+H:\C Sharp\ManagementSystem\obj\Debug\ManagementSystem.StartUp.resources
+H:\C Sharp\ManagementSystem\obj\Debug\ManagementSystem.csprojResolveAssemblyReference.cache
+H:\CSharp\csharpproject\bin\Debug\ManagementSystem.exe.config
+H:\CSharp\csharpproject\obj\Debug\ManagementSystem.exe
+H:\CSharp\csharpproject\obj\Debug\ManagementSystem.pdb
+H:\CSharp\csharpproject\bin\Debug\ManagementSystem.exe
+H:\CSharp\csharpproject\bin\Debug\ManagementSystem.pdb
+H:\CSharp\csharpproject\bin\Debug\Bunifu_UI_v1.4.dll
+H:\CSharp\csharpproject\bin\Debug\MetroFramework.Design.dll
+H:\CSharp\csharpproject\bin\Debug\MetroFramework.dll
+H:\CSharp\csharpproject\bin\Debug\MetroFramework.Fonts.dll
+H:\CSharp\csharpproject\obj\Debug\ManagementSystem.csprojResolveAssemblyReference.cache
+H:\CSharp\csharpproject\obj\Debug\ManagementSystem.Properties.Resources.resources
+H:\CSharp\csharpproject\obj\Debug\ManagementSystem.StartUp.resources
+H:\CSharp\csharpproject\obj\Debug\ManagementSystem.csproj.GenerateResource.Cache
+C:\Users\USER\Desktop\csharpproject\bin\Debug\ManagementSystem.exe.config
+C:\Users\USER\Desktop\csharpproject\bin\Debug\ManagementSystem.exe
+C:\Users\USER\Desktop\csharpproject\bin\Debug\ManagementSystem.pdb
+C:\Users\USER\Desktop\csharpproject\bin\Debug\MetroFramework.Design.dll
+C:\Users\USER\Desktop\csharpproject\bin\Debug\MetroFramework.dll
+C:\Users\USER\Desktop\csharpproject\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\USER\Desktop\csharpproject\obj\Debug\ManagementSystem.csprojResolveAssemblyReference.cache
+C:\Users\USER\Desktop\csharpproject\obj\Debug\ManagementSystem.MainPage.resources
+C:\Users\USER\Desktop\csharpproject\obj\Debug\ManagementSystem.Properties.Resources.resources
+C:\Users\USER\Desktop\csharpproject\obj\Debug\ManagementSystem.StartUp.resources
+C:\Users\USER\Desktop\csharpproject\obj\Debug\ManagementSystem.csproj.GenerateResource.Cache
+C:\Users\USER\Desktop\csharpproject\obj\Debug\ManagementSystem.exe
+C:\Users\USER\Desktop\csharpproject\obj\Debug\ManagementSystem.pdb
+C:\Users\ahmed\Desktop\csharpproject\bin\Debug\ManagementSystem.exe.config
+C:\Users\ahmed\Desktop\csharpproject\obj\Debug\ManagementSystem.exe
+C:\Users\ahmed\Desktop\csharpproject\obj\Debug\ManagementSystem.pdb
+C:\Users\ahmed\Desktop\csharpproject\bin\Debug\ManagementSystem.exe
+C:\Users\ahmed\Desktop\csharpproject\bin\Debug\ManagementSystem.pdb
+C:\Users\ahmed\Desktop\csharpproject\bin\Debug\MetroFramework.Design.dll
+C:\Users\ahmed\Desktop\csharpproject\bin\Debug\MetroFramework.dll
+C:\Users\ahmed\Desktop\csharpproject\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\ahmed\Desktop\csharpproject\obj\Debug\ManagementSystem.csprojResolveAssemblyReference.cache
+C:\Users\ahmed\Desktop\csharpproject\obj\Debug\ManagementSystem.MainPage.resources
+C:\Users\ahmed\Desktop\csharpproject\obj\Debug\ManagementSystem.Properties.Resources.resources
+C:\Users\ahmed\Desktop\csharpproject\obj\Debug\ManagementSystem.StartUp.resources
+C:\Users\ahmed\Desktop\csharpproject\obj\Debug\ManagementSystem.csproj.GenerateResource.Cache
+H:\CSharp\GitHub\csharproject-master\bin\Debug\ManagementSystem.exe.config
+H:\CSharp\GitHub\csharproject-master\obj\Debug\ManagementSystem.exe
+H:\CSharp\GitHub\csharproject-master\obj\Debug\ManagementSystem.pdb
