@@ -1,20 +1,18 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+
 
 namespace ManagementSystem
 {
     public partial class MainPage : Form
     {
-        public MainPage()
+        string username;
+       
+        public MainPage(string username)
         {
             InitializeComponent();
+            this.username = username;
+            
         }
 
         private void lblCategoryLabel_Click(object sender, EventArgs e)
@@ -34,6 +32,8 @@ namespace ManagementSystem
 
         private void MainPage_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'shopDataSet.Members' table. You can move, or remove it, as needed.
+           
 
         }
 
@@ -54,13 +54,41 @@ namespace ManagementSystem
 
         private void btnHardware_Click(object sender, EventArgs e)
         {
-            
+
 
         }
 
         private void btnMobiledevice_Click(object sender, EventArgs e)
         {
-            
+
+        }
+
+        private void btnGames_Click(object sender, EventArgs e)
+        {
+           
+
+        }
+
+        private void userPanel_Click(object sender, EventArgs e)
+        {
+          
+        }
+
+        
+
+        private void userNameButton_Click(object sender, EventArgs e)
+        {
+            userNameButton.ButtonText = username;
+        }
+
+        private void userNameButton_Load_1(object sender, EventArgs e)
+        {
+            userNameButton.ButtonText = username;
+        }
+
+        private void userNameButton_Click_1(object sender, EventArgs e)
+        {
+            userNameButton.ButtonText = username;
         }
     }
 }

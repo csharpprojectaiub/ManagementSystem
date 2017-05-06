@@ -44,6 +44,8 @@
             this.txtFieldLoginPassword = new Bunifu.Framework.UI.BunifuTextbox();
             this.txtFieldLoginUserName = new Bunifu.Framework.UI.BunifuTextbox();
             this.btnSignIn = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.directoryEntry1 = new System.DirectoryServices.DirectoryEntry();
+            this.directoryEntry2 = new System.DirectoryServices.DirectoryEntry();
             this.panelSignUp.SuspendLayout();
             this.panelSignIn.SuspendLayout();
             this.SuspendLayout();
@@ -68,14 +70,14 @@
             this.btnSignUpChange.Iconimage_Selected = null;
             this.btnSignUpChange.IconZoom = 90D;
             this.btnSignUpChange.IsTab = false;
-            this.btnSignUpChange.Location = new System.Drawing.Point(149, 49);
-            this.btnSignUpChange.Margin = new System.Windows.Forms.Padding(5);
+            this.btnSignUpChange.Location = new System.Drawing.Point(112, 40);
+            this.btnSignUpChange.Margin = new System.Windows.Forms.Padding(4);
             this.btnSignUpChange.Name = "btnSignUpChange";
             this.btnSignUpChange.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(160)))), ((int)(((byte)(136)))));
             this.btnSignUpChange.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(160)))), ((int)(((byte)(136)))));
             this.btnSignUpChange.OnHoverTextColor = System.Drawing.Color.White;
             this.btnSignUpChange.selected = false;
-            this.btnSignUpChange.Size = new System.Drawing.Size(168, 55);
+            this.btnSignUpChange.Size = new System.Drawing.Size(126, 45);
             this.btnSignUpChange.TabIndex = 0;
             this.btnSignUpChange.Textcolor = System.Drawing.Color.White;
             this.btnSignUpChange.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -96,14 +98,14 @@
             this.btnSignInChange.Iconimage_Selected = null;
             this.btnSignInChange.IconZoom = 90D;
             this.btnSignInChange.IsTab = false;
-            this.btnSignInChange.Location = new System.Drawing.Point(325, 49);
-            this.btnSignInChange.Margin = new System.Windows.Forms.Padding(5);
+            this.btnSignInChange.Location = new System.Drawing.Point(244, 40);
+            this.btnSignInChange.Margin = new System.Windows.Forms.Padding(4);
             this.btnSignInChange.Name = "btnSignInChange";
             this.btnSignInChange.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(160)))), ((int)(((byte)(136)))));
             this.btnSignInChange.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(160)))), ((int)(((byte)(136)))));
             this.btnSignInChange.OnHoverTextColor = System.Drawing.Color.White;
             this.btnSignInChange.selected = false;
-            this.btnSignInChange.Size = new System.Drawing.Size(160, 55);
+            this.btnSignInChange.Size = new System.Drawing.Size(120, 45);
             this.btnSignInChange.TabIndex = 0;
             this.btnSignInChange.Textcolor = System.Drawing.Color.White;
             this.btnSignInChange.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -119,10 +121,9 @@
             this.panelSignUp.Controls.Add(this.txtFieldFirstName);
             this.panelSignUp.Controls.Add(this.btnSignUp);
             this.panelSignUp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(73)))), ((int)(((byte)(102)))));
-            this.panelSignUp.Location = new System.Drawing.Point(33, 140);
-            this.panelSignUp.Margin = new System.Windows.Forms.Padding(4);
+            this.panelSignUp.Location = new System.Drawing.Point(25, 114);
             this.panelSignUp.Name = "panelSignUp";
-            this.panelSignUp.Size = new System.Drawing.Size(527, 595);
+            this.panelSignUp.Size = new System.Drawing.Size(396, 484);
             this.panelSignUp.TabIndex = 1;
             // 
             // txtFieldContactNumber
@@ -133,10 +134,10 @@
             this.txtFieldContactNumber.Font = new System.Drawing.Font("Century", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtFieldContactNumber.ForeColor = System.Drawing.Color.White;
             this.txtFieldContactNumber.Icon = ((System.Drawing.Image)(resources.GetObject("txtFieldContactNumber.Icon")));
-            this.txtFieldContactNumber.Location = new System.Drawing.Point(51, 380);
-            this.txtFieldContactNumber.Margin = new System.Windows.Forms.Padding(5);
+            this.txtFieldContactNumber.Location = new System.Drawing.Point(38, 309);
+            this.txtFieldContactNumber.Margin = new System.Windows.Forms.Padding(4);
             this.txtFieldContactNumber.Name = "txtFieldContactNumber";
-            this.txtFieldContactNumber.Size = new System.Drawing.Size(420, 59);
+            this.txtFieldContactNumber.Size = new System.Drawing.Size(315, 48);
             this.txtFieldContactNumber.TabIndex = 1;
             this.txtFieldContactNumber.text = "Contact Number";
             // 
@@ -148,10 +149,10 @@
             this.txtFieldPassword.Font = new System.Drawing.Font("Century", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtFieldPassword.ForeColor = System.Drawing.Color.White;
             this.txtFieldPassword.Icon = ((System.Drawing.Image)(resources.GetObject("txtFieldPassword.Icon")));
-            this.txtFieldPassword.Location = new System.Drawing.Point(51, 290);
-            this.txtFieldPassword.Margin = new System.Windows.Forms.Padding(5);
+            this.txtFieldPassword.Location = new System.Drawing.Point(38, 236);
+            this.txtFieldPassword.Margin = new System.Windows.Forms.Padding(4);
             this.txtFieldPassword.Name = "txtFieldPassword";
-            this.txtFieldPassword.Size = new System.Drawing.Size(420, 59);
+            this.txtFieldPassword.Size = new System.Drawing.Size(315, 48);
             this.txtFieldPassword.TabIndex = 1;
             this.txtFieldPassword.text = "password";
             // 
@@ -163,10 +164,10 @@
             this.txtFieldUserName.Font = new System.Drawing.Font("Century", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtFieldUserName.ForeColor = System.Drawing.Color.White;
             this.txtFieldUserName.Icon = ((System.Drawing.Image)(resources.GetObject("txtFieldUserName.Icon")));
-            this.txtFieldUserName.Location = new System.Drawing.Point(51, 204);
-            this.txtFieldUserName.Margin = new System.Windows.Forms.Padding(5);
+            this.txtFieldUserName.Location = new System.Drawing.Point(38, 166);
+            this.txtFieldUserName.Margin = new System.Windows.Forms.Padding(4);
             this.txtFieldUserName.Name = "txtFieldUserName";
-            this.txtFieldUserName.Size = new System.Drawing.Size(420, 59);
+            this.txtFieldUserName.Size = new System.Drawing.Size(315, 48);
             this.txtFieldUserName.TabIndex = 1;
             this.txtFieldUserName.text = "UserName";
             // 
@@ -178,10 +179,10 @@
             this.txtFieldLastName.Font = new System.Drawing.Font("Century", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtFieldLastName.ForeColor = System.Drawing.Color.White;
             this.txtFieldLastName.Icon = ((System.Drawing.Image)(resources.GetObject("txtFieldLastName.Icon")));
-            this.txtFieldLastName.Location = new System.Drawing.Point(51, 118);
-            this.txtFieldLastName.Margin = new System.Windows.Forms.Padding(5);
+            this.txtFieldLastName.Location = new System.Drawing.Point(38, 96);
+            this.txtFieldLastName.Margin = new System.Windows.Forms.Padding(4);
             this.txtFieldLastName.Name = "txtFieldLastName";
-            this.txtFieldLastName.Size = new System.Drawing.Size(420, 59);
+            this.txtFieldLastName.Size = new System.Drawing.Size(315, 48);
             this.txtFieldLastName.TabIndex = 1;
             this.txtFieldLastName.text = "Last Name";
             // 
@@ -193,10 +194,10 @@
             this.txtFieldFirstName.Font = new System.Drawing.Font("Century", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtFieldFirstName.ForeColor = System.Drawing.Color.White;
             this.txtFieldFirstName.Icon = ((System.Drawing.Image)(resources.GetObject("txtFieldFirstName.Icon")));
-            this.txtFieldFirstName.Location = new System.Drawing.Point(51, 30);
-            this.txtFieldFirstName.Margin = new System.Windows.Forms.Padding(5);
+            this.txtFieldFirstName.Location = new System.Drawing.Point(38, 24);
+            this.txtFieldFirstName.Margin = new System.Windows.Forms.Padding(4);
             this.txtFieldFirstName.Name = "txtFieldFirstName";
-            this.txtFieldFirstName.Size = new System.Drawing.Size(420, 59);
+            this.txtFieldFirstName.Size = new System.Drawing.Size(315, 48);
             this.txtFieldFirstName.TabIndex = 1;
             this.txtFieldFirstName.text = "First Name";
             // 
@@ -215,17 +216,18 @@
             this.btnSignUp.Iconimage_Selected = null;
             this.btnSignUp.IconZoom = 90D;
             this.btnSignUp.IsTab = false;
-            this.btnSignUp.Location = new System.Drawing.Point(103, 495);
-            this.btnSignUp.Margin = new System.Windows.Forms.Padding(5);
+            this.btnSignUp.Location = new System.Drawing.Point(77, 402);
+            this.btnSignUp.Margin = new System.Windows.Forms.Padding(4);
             this.btnSignUp.Name = "btnSignUp";
             this.btnSignUp.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(160)))), ((int)(((byte)(136)))));
             this.btnSignUp.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(160)))), ((int)(((byte)(136)))));
             this.btnSignUp.OnHoverTextColor = System.Drawing.Color.White;
             this.btnSignUp.selected = false;
-            this.btnSignUp.Size = new System.Drawing.Size(336, 55);
+            this.btnSignUp.Size = new System.Drawing.Size(252, 45);
             this.btnSignUp.TabIndex = 0;
             this.btnSignUp.Textcolor = System.Drawing.Color.White;
             this.btnSignUp.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSignUp.Click += new System.EventHandler(this.btnSignUp_Click);
             // 
             // panelSignIn
             // 
@@ -234,11 +236,10 @@
             this.panelSignIn.Controls.Add(this.txtFieldLoginUserName);
             this.panelSignIn.Controls.Add(this.btnSignIn);
             this.panelSignIn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(73)))), ((int)(((byte)(102)))));
-            this.panelSignIn.Location = new System.Drawing.Point(33, 140);
-            this.panelSignIn.Margin = new System.Windows.Forms.Padding(4);
+            this.panelSignIn.Location = new System.Drawing.Point(487, 114);
             this.panelSignIn.Name = "panelSignIn";
-            this.panelSignIn.Size = new System.Drawing.Size(533, 595);
-            this.panelSignIn.TabIndex = 1;
+            this.panelSignIn.Size = new System.Drawing.Size(400, 484);
+            this.panelSignIn.TabIndex = 2;
             this.panelSignIn.Visible = false;
             // 
             // txtFieldLoginPassword
@@ -249,11 +250,12 @@
             this.txtFieldLoginPassword.Font = new System.Drawing.Font("Century", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtFieldLoginPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(192)))), ((int)(((byte)(160)))));
             this.txtFieldLoginPassword.Icon = ((System.Drawing.Image)(resources.GetObject("txtFieldLoginPassword.Icon")));
-            this.txtFieldLoginPassword.Location = new System.Drawing.Point(65, 185);
-            this.txtFieldLoginPassword.Margin = new System.Windows.Forms.Padding(5);
+            this.txtFieldLoginPassword.Location = new System.Drawing.Point(49, 150);
+            this.txtFieldLoginPassword.Margin = new System.Windows.Forms.Padding(4);
             this.txtFieldLoginPassword.Name = "txtFieldLoginPassword";
-            this.txtFieldLoginPassword.Size = new System.Drawing.Size(420, 59);
-            this.txtFieldLoginPassword.TabIndex = 1;
+            this.txtFieldLoginPassword.Size = new System.Drawing.Size(315, 48);
+            this.txtFieldLoginPassword.TabIndex = 2;
+            this.txtFieldLoginPassword.Tag = "";
             this.txtFieldLoginPassword.text = "password";
             // 
             // txtFieldLoginUserName
@@ -264,12 +266,13 @@
             this.txtFieldLoginUserName.Font = new System.Drawing.Font("Century", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtFieldLoginUserName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(192)))), ((int)(((byte)(160)))));
             this.txtFieldLoginUserName.Icon = ((System.Drawing.Image)(resources.GetObject("txtFieldLoginUserName.Icon")));
-            this.txtFieldLoginUserName.Location = new System.Drawing.Point(65, 75);
-            this.txtFieldLoginUserName.Margin = new System.Windows.Forms.Padding(5);
+            this.txtFieldLoginUserName.Location = new System.Drawing.Point(49, 61);
+            this.txtFieldLoginUserName.Margin = new System.Windows.Forms.Padding(4);
             this.txtFieldLoginUserName.Name = "txtFieldLoginUserName";
-            this.txtFieldLoginUserName.Size = new System.Drawing.Size(420, 59);
+            this.txtFieldLoginUserName.Size = new System.Drawing.Size(315, 48);
             this.txtFieldLoginUserName.TabIndex = 1;
             this.txtFieldLoginUserName.text = "UserName";
+            this.txtFieldLoginUserName.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txtFieldLoginUserName_MouseClick);
             // 
             // btnSignIn
             // 
@@ -286,32 +289,31 @@
             this.btnSignIn.Iconimage_Selected = null;
             this.btnSignIn.IconZoom = 90D;
             this.btnSignIn.IsTab = false;
-            this.btnSignIn.Location = new System.Drawing.Point(120, 315);
-            this.btnSignIn.Margin = new System.Windows.Forms.Padding(5);
+            this.btnSignIn.Location = new System.Drawing.Point(90, 256);
+            this.btnSignIn.Margin = new System.Windows.Forms.Padding(4);
             this.btnSignIn.Name = "btnSignIn";
             this.btnSignIn.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(160)))), ((int)(((byte)(136)))));
             this.btnSignIn.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(160)))), ((int)(((byte)(136)))));
             this.btnSignIn.OnHoverTextColor = System.Drawing.Color.White;
             this.btnSignIn.selected = false;
-            this.btnSignIn.Size = new System.Drawing.Size(336, 55);
-            this.btnSignIn.TabIndex = 0;
+            this.btnSignIn.Size = new System.Drawing.Size(252, 45);
+            this.btnSignIn.TabIndex = 3;
             this.btnSignIn.Textcolor = System.Drawing.Color.White;
             this.btnSignIn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSignIn.Click += new System.EventHandler(this.bunifuFlatButton1_Click);
+            this.btnSignIn.Click += new System.EventHandler(this.btnSignIn_Click);
             // 
             // StartUp
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(50)))), ((int)(((byte)(63)))));
-            this.ClientSize = new System.Drawing.Size(590, 779);
+            this.ClientSize = new System.Drawing.Size(1177, 654);
             this.Controls.Add(this.panelSignIn);
             this.Controls.Add(this.panelSignUp);
             this.Controls.Add(this.btnSignInChange);
             this.Controls.Add(this.btnSignUpChange);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "StartUp";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -337,5 +339,7 @@
         private Bunifu.Framework.UI.BunifuTextbox txtFieldLoginPassword;
         private Bunifu.Framework.UI.BunifuTextbox txtFieldLoginUserName;
         private Bunifu.Framework.UI.BunifuFlatButton btnSignIn;
+        private System.DirectoryServices.DirectoryEntry directoryEntry1;
+        private System.DirectoryServices.DirectoryEntry directoryEntry2;
     }
 }
