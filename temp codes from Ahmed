@@ -1,0 +1,27 @@
+ using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                using (SqlCommand cmd = new SqlCommand("INSERT INTO members VALUES(@title)", conn))
+                {
+                    conn.Open();
+                    SqlParameter param1 = new SqlParameter("@title", txtFieldFirstName.Text);
+                    SqlParameter param2 = new SqlParameter("@title", txtFieldLastName.Text);
+                    SqlParameter param3 = new SqlParameter("@title", txtFieldUserName.Text);
+                    SqlParameter param4 = new SqlParameter("@title", txtFieldPassword.Text);
+                    SqlParameter param5 = new SqlParameter("@title", txtFieldContactNumber.Text);
+                    cmd.Parameters.Add(param1);
+                    cmd.Parameters.Add(param2);
+                    cmd.Parameters.Add(param3);
+                    cmd.Parameters.Add(param4);
+                    cmd.Parameters.Add(param5);
+                    if (cmd.ExecuteNonQuery() > 0)
+                    {
+                        MessageBox.Show("Registration Successful");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Registration Failed");
+                    }
+
+                }
+
+            }
