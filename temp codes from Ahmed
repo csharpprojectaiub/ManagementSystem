@@ -1,13 +1,13 @@
  using (SqlConnection conn = new SqlConnection(connectionString))
             {
-                using (SqlCommand cmd = new SqlCommand("INSERT INTO members VALUES(@first,@last,@username,@password,@contact)", conn))
+                using (SqlCommand cmd = new SqlCommand("INSERT INTO members([firstname],[lastname],[username],[password],[contactnumber]) VALUES(@firstname,@lastname,@username,@password,@contactnumber)", conn))
                 {
                     conn.Open();
-                    SqlParameter param1 = new SqlParameter("@first", txtFieldFirstName.Text);
-                    SqlParameter param2 = new SqlParameter("@last", txtFieldLastName.Text);
+                    SqlParameter param1 = new SqlParameter("@firstname", txtFieldFirstName.Text);
+                    SqlParameter param2 = new SqlParameter("@lastname", txtFieldLastName.Text);
                     SqlParameter param3 = new SqlParameter("@username", txtFieldUserName.Text);
                     SqlParameter param4 = new SqlParameter("@password", txtFieldPassword.Text);
-                    SqlParameter param5 = new SqlParameter("@contact", txtFieldContactNumber.Text);
+                    SqlParameter param5 = new SqlParameter("@contactnumber", txtFieldContactNumber.Text);
                     cmd.Parameters.Add(param1);
                     cmd.Parameters.Add(param2);
                     cmd.Parameters.Add(param3);
