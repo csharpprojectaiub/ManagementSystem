@@ -62,7 +62,6 @@ H:\CSharp\GitHub\csharproject-master\obj\Debug\ManagementSystem.MainPage.resourc
 H:\CSharp\GitHub\csharproject-master\obj\Debug\ManagementSystem.Properties.Resources.resources
 H:\CSharp\GitHub\csharproject-master\obj\Debug\ManagementSystem.StartUp.resources
 H:\CSharp\GitHub\csharproject-master\obj\Debug\ManagementSystem.csproj.GenerateResource.Cache
-H:\CSharp\GitHub\csharproject-master\obj\Debug\ManagementSystem.csprojResolveAssemblyReference.cache
 H:\CSharp\GitHub\csharproject-master\bin\Debug\Dapper.dll
 H:\CSharp\GitHub\csharproject-master\bin\Debug\Drapper.dll
 H:\CSharp\GitHub\csharproject-master\bin\Debug\Drapper.Validation.dll
@@ -75,3 +74,4 @@ H:\CSharp\GitHub\csharproject-master\bin\Debug\EntityFramework.SqlServer.xml
 H:\CSharp\GitHub\csharproject-master\bin\Debug\Newtonsoft.Json.xml
 H:\CSharp\GitHub\csharproject-master\bin\Debug\Estore.mdf
 H:\CSharp\GitHub\csharproject-master\bin\Debug\Estore_log.ldf
+H:\CSharp\GitHub\csharproject-master\obj\Debug\ManagementSystem.csprojResolveAssemblyReference.cache

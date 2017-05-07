@@ -1,24 +1,18 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SqlClient;
-using MetroFramework;
+
 namespace ManagementSystem
 {
 
     public partial class StartUp : Form
     {
-        const string connectionString = @"Data Source=(localdb)\mssqllocaldb;Initial Catalog=EshopStore;Integrated Security=True;Pooling=False";
+        const string connectionString = @"Data Source = (localdb)\mssqllocaldb;Initial Catalog = EshopStore; Integrated Security = True; Pooling=False";
         SqlConnection con = new SqlConnection(connectionString);
         SqlCommand cmd;
         SqlDataReader dataReader;
+        SqlDataAdapter dataAdapter;
         string username;
         public StartUp()
         {
@@ -50,37 +44,33 @@ namespace ManagementSystem
              username = txtFieldUserName.text;
             string password = txtFieldPassword.text;
             string contactNumber = txtFieldContactNumber.text;
-            con.Open();
-            try
-            {
+            SqlConnection con = new SqlConnection(connectionString);
+            con.Open( );
+            string sql = "INSERT INTO Members(firstname,lastname,username,password,contactnumber)   values('" + firstName + "','"+lastName+"','"+username+"','"+password+"','"+contactNumber+"')";
+            SqlCommand cmd = new SqlCommand(sql,con);
+            cmd.ExecuteNonQuery();
+            MessageBox.Show("Registered");
 
-            }
-            catch
-            {
-
-            }
-            finally
-            {
-                con.Close();
-            }
         }
+       
+        
 
         private void btnSignIn_Click(object sender, EventArgs e)
         {
              username = txtFieldLoginUserName.text;
-            string uspassword = txtFieldLoginPassword.text;
-            if (username == "" || uspassword == "")
+            string password = txtFieldLoginPassword.text;
+            if (username == "" || password == "")
             {
-                MessageBox.Show("Please provide UserName and Password");
-                return;
+                MessageBox.Show("Username/password can not be empty");
+                    return;
             }
            
             con.Open();
             try
             {
-                string sql = "select *from Members where username='"+username+"' and password = '"+uspassword+"' ";
+                string sql = "select *from Members where username='"+username+"' and password = '"+password+"' ";
                 cmd = new SqlCommand(sql, con);
-                SqlDataReader dataReader;
+               
                 dataReader = cmd.ExecuteReader();
                 int count = 0;
                 while (dataReader.Read())
@@ -113,6 +103,51 @@ namespace ManagementSystem
         private void txtFieldLoginUserName_MouseClick(object sender, MouseEventArgs e)
         {
             txtFieldLoginUserName.text = "";
+        }
+
+        private void txtFieldLoginUserName_OnTextChange(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtFieldLoginUserName_Enter(object sender, EventArgs e)
+        {
+            txtFieldLoginUserName.text = "";
+        }
+
+        private void txtFieldLoginPassword_Enter(object sender, EventArgs e)
+        {
+            txtFieldLoginPassword.text = "";
+        }
+
+        private void txtFieldFirstName_Enter(object sender, EventArgs e)
+        {
+            txtFieldFirstName.text = "";
+        }
+
+        private void txtFieldLastName_OnTextChange(object sender, EventArgs e)
+        {
+            txtFieldLastName.text = "";
+        }
+
+        private void txtFieldUserName_Enter(object sender, EventArgs e)
+        {
+            txtFieldUserName.text = "";
+        }
+
+        private void txtFieldPassword_Enter(object sender, EventArgs e)
+        {
+            txtFieldPassword.text = "";
+        }
+
+        private void txtFieldContactNumber_Enter(object sender, EventArgs e)
+        {
+            txtFieldContactNumber.text = "";
+        }
+
+        private void txtFieldLastName_Enter(object sender, EventArgs e)
+        {
+            txtFieldLastName.text = "";
         }
     }
 }

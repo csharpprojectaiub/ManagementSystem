@@ -89,6 +89,16 @@ namespace ManagementSystem
         private void userNameButton_Click_1(object sender, EventArgs e)
         {
             userNameButton.ButtonText = username;
+            paneluserDropDown.Visible = true;
+            
+        }
+
+        private void picboxClose_Click(object sender, EventArgs e)
+        {
+            closeAnimator.Hide(paneluserDropDown);
+            closeAnimator.ShowSync(paneluserDropDown);
+            paneluserDropDown.Visible = false;
+            
         }
     }
 }

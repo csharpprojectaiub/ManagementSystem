@@ -140,6 +140,7 @@
             this.txtFieldContactNumber.Size = new System.Drawing.Size(315, 48);
             this.txtFieldContactNumber.TabIndex = 1;
             this.txtFieldContactNumber.text = "Contact Number";
+            this.txtFieldContactNumber.Enter += new System.EventHandler(this.txtFieldContactNumber_Enter);
             // 
             // txtFieldPassword
             // 
@@ -155,6 +156,7 @@
             this.txtFieldPassword.Size = new System.Drawing.Size(315, 48);
             this.txtFieldPassword.TabIndex = 1;
             this.txtFieldPassword.text = "password";
+            this.txtFieldPassword.Enter += new System.EventHandler(this.txtFieldPassword_Enter);
             // 
             // txtFieldUserName
             // 
@@ -170,6 +172,7 @@
             this.txtFieldUserName.Size = new System.Drawing.Size(315, 48);
             this.txtFieldUserName.TabIndex = 1;
             this.txtFieldUserName.text = "UserName";
+            this.txtFieldUserName.Enter += new System.EventHandler(this.txtFieldUserName_Enter);
             // 
             // txtFieldLastName
             // 
@@ -185,6 +188,7 @@
             this.txtFieldLastName.Size = new System.Drawing.Size(315, 48);
             this.txtFieldLastName.TabIndex = 1;
             this.txtFieldLastName.text = "Last Name";
+            this.txtFieldLastName.Enter += new System.EventHandler(this.txtFieldLastName_Enter);
             // 
             // txtFieldFirstName
             // 
@@ -200,6 +204,7 @@
             this.txtFieldFirstName.Size = new System.Drawing.Size(315, 48);
             this.txtFieldFirstName.TabIndex = 1;
             this.txtFieldFirstName.text = "First Name";
+            this.txtFieldFirstName.Enter += new System.EventHandler(this.txtFieldFirstName_Enter);
             // 
             // btnSignUp
             // 
@@ -236,7 +241,7 @@
             this.panelSignIn.Controls.Add(this.txtFieldLoginUserName);
             this.panelSignIn.Controls.Add(this.btnSignIn);
             this.panelSignIn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(73)))), ((int)(((byte)(102)))));
-            this.panelSignIn.Location = new System.Drawing.Point(487, 114);
+            this.panelSignIn.Location = new System.Drawing.Point(25, 114);
             this.panelSignIn.Name = "panelSignIn";
             this.panelSignIn.Size = new System.Drawing.Size(400, 484);
             this.panelSignIn.TabIndex = 2;
@@ -257,6 +262,7 @@
             this.txtFieldLoginPassword.TabIndex = 2;
             this.txtFieldLoginPassword.Tag = "";
             this.txtFieldLoginPassword.text = "password";
+            this.txtFieldLoginPassword.Enter += new System.EventHandler(this.txtFieldLoginPassword_Enter);
             // 
             // txtFieldLoginUserName
             // 
@@ -272,7 +278,8 @@
             this.txtFieldLoginUserName.Size = new System.Drawing.Size(315, 48);
             this.txtFieldLoginUserName.TabIndex = 1;
             this.txtFieldLoginUserName.text = "UserName";
-            this.txtFieldLoginUserName.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txtFieldLoginUserName_MouseClick);
+            this.txtFieldLoginUserName.OnTextChange += new System.EventHandler(this.txtFieldLoginUserName_OnTextChange);
+            this.txtFieldLoginUserName.Enter += new System.EventHandler(this.txtFieldLoginUserName_Enter);
             // 
             // btnSignIn
             // 
@@ -307,7 +314,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(50)))), ((int)(((byte)(63)))));
-            this.ClientSize = new System.Drawing.Size(1177, 654);
+            this.ClientSize = new System.Drawing.Size(469, 654);
             this.Controls.Add(this.panelSignIn);
             this.Controls.Add(this.panelSignUp);
             this.Controls.Add(this.btnSignInChange);
