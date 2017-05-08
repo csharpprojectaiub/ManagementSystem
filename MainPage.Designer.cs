@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            BunifuAnimatorNS.Animation animation2 = new BunifuAnimatorNS.Animation();
             BunifuAnimatorNS.Animation animation1 = new BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainPage));
             this.doubleBitmapControl1 = new BunifuAnimatorNS.DoubleBitmapControl();
@@ -36,37 +37,65 @@
             this.bunifuSeparator3 = new Bunifu.Framework.UI.BunifuSeparator();
             this.btnGames = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnAccessories = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnMonitor = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnLaptop = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnMobiledevice = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnHardware = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
             this.lblCategoryLabel = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.btnHardware = new Bunifu.Framework.UI.BunifuFlatButton();
             this.panelTop = new System.Windows.Forms.Panel();
-            this.userNameButton = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnLoginName = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lblTimer = new System.Windows.Forms.Label();
+            this.lblWelcome = new System.Windows.Forms.Label();
             this.bunifuSeparator2 = new Bunifu.Framework.UI.BunifuSeparator();
-            this.membersBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.shopDataSet = new ManagementSystem.ShopDataSet();
-            this.membersTableAdapter = new ManagementSystem.ShopDataSetTableAdapters.MembersTableAdapter();
             this.panleMain = new System.Windows.Forms.Panel();
-            this.paneluserDropDown = new System.Windows.Forms.Panel();
-            this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.bunifuFlatButton2 = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.bunifuFlatButton3 = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.bunifuFlatButton4 = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.picboxClose = new System.Windows.Forms.PictureBox();
+            this.panelHardware = new System.Windows.Forms.Panel();
+            this.panelHarawareData = new System.Windows.Forms.Panel();
+            this.seacrchHaradware = new System.Windows.Forms.ToolStrip();
+            this.productnameToolStripLabel = new System.Windows.Forms.ToolStripLabel();
+            this.productnameToolStripTextBox = new System.Windows.Forms.ToolStripTextBox();
+            this.seacrchToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.hardwareDataGridView = new System.Windows.Forms.DataGridView();
             this.closeAnimator = new BunifuAnimatorNS.Animator(this.components);
+            this.openAnimator = new BunifuAnimatorNS.Animator(this.components);
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.hardwareBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.mobileDeviceBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.lvlProductCategpry = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
+            this.txtQuantity = new MetroFramework.Controls.MetroLabel();
+            this.comboCategory = new MetroFramework.Controls.MetroComboBox();
+            this.txtproductId = new MetroFramework.Controls.MetroTextBox();
+            this.txtproductQuantity = new MetroFramework.Controls.MetroTextBox();
+            this.btnAddToCart = new MetroFramework.Controls.MetroButton();
+            this.btnConfirm = new MetroFramework.Controls.MetroButton();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.hardwareBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.shopData = new ManagementSystem.shopData();
+            this.hardwareTableAdapter = new ManagementSystem.shopDataTableAdapters.HardwareTableAdapter();
+            this.tableAdapterManager = new ManagementSystem.shopDataTableAdapters.TableAdapterManager();
+            this.buyGrid = new System.Windows.Forms.DataGridView();
             this.panelSidebar.SuspendLayout();
             this.panelTop.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.membersBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.shopDataSet)).BeginInit();
             this.panleMain.SuspendLayout();
-            this.paneluserDropDown.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picboxClose)).BeginInit();
+            this.panelHardware.SuspendLayout();
+            this.panelHarawareData.SuspendLayout();
+            this.seacrchHaradware.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.hardwareDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hardwareBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mobileDeviceBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hardwareBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shopData)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.buyGrid)).BeginInit();
             this.SuspendLayout();
             // 
             // doubleBitmapControl1
             // 
+            this.openAnimator.SetDecoration(this.doubleBitmapControl1, BunifuAnimatorNS.DecorationType.None);
             this.closeAnimator.SetDecoration(this.doubleBitmapControl1, BunifuAnimatorNS.DecorationType.None);
             this.doubleBitmapControl1.Location = new System.Drawing.Point(784, 490);
             this.doubleBitmapControl1.Margin = new System.Windows.Forms.Padding(2);
@@ -81,12 +110,12 @@
             this.panelSidebar.Controls.Add(this.bunifuSeparator3);
             this.panelSidebar.Controls.Add(this.btnGames);
             this.panelSidebar.Controls.Add(this.btnAccessories);
-            this.panelSidebar.Controls.Add(this.btnMonitor);
             this.panelSidebar.Controls.Add(this.btnLaptop);
             this.panelSidebar.Controls.Add(this.btnMobiledevice);
-            this.panelSidebar.Controls.Add(this.btnHardware);
             this.panelSidebar.Controls.Add(this.bunifuSeparator1);
             this.panelSidebar.Controls.Add(this.lblCategoryLabel);
+            this.panelSidebar.Controls.Add(this.btnHardware);
+            this.openAnimator.SetDecoration(this.panelSidebar, BunifuAnimatorNS.DecorationType.None);
             this.closeAnimator.SetDecoration(this.panelSidebar, BunifuAnimatorNS.DecorationType.None);
             this.panelSidebar.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelSidebar.Location = new System.Drawing.Point(0, 0);
@@ -99,6 +128,7 @@
             // bunifuSeparator3
             // 
             this.bunifuSeparator3.BackColor = System.Drawing.Color.Transparent;
+            this.openAnimator.SetDecoration(this.bunifuSeparator3, BunifuAnimatorNS.DecorationType.None);
             this.closeAnimator.SetDecoration(this.bunifuSeparator3, BunifuAnimatorNS.DecorationType.None);
             this.bunifuSeparator3.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
             this.bunifuSeparator3.LineThickness = 3;
@@ -118,6 +148,7 @@
             this.btnGames.ButtonText = "Games";
             this.btnGames.Cursor = System.Windows.Forms.Cursors.Hand;
             this.closeAnimator.SetDecoration(this.btnGames, BunifuAnimatorNS.DecorationType.None);
+            this.openAnimator.SetDecoration(this.btnGames, BunifuAnimatorNS.DecorationType.None);
             this.btnGames.Font = new System.Drawing.Font("Consolas", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGames.Iconcolor = System.Drawing.Color.Transparent;
             this.btnGames.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnGames.Iconimage")));
@@ -126,7 +157,7 @@
             this.btnGames.Iconimage_Selected = null;
             this.btnGames.IconZoom = 90D;
             this.btnGames.IsTab = false;
-            this.btnGames.Location = new System.Drawing.Point(4, 434);
+            this.btnGames.Location = new System.Drawing.Point(2, 387);
             this.btnGames.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnGames.Name = "btnGames";
             this.btnGames.Normalcolor = System.Drawing.Color.Teal;
@@ -148,6 +179,7 @@
             this.btnAccessories.ButtonText = "Accessories";
             this.btnAccessories.Cursor = System.Windows.Forms.Cursors.Hand;
             this.closeAnimator.SetDecoration(this.btnAccessories, BunifuAnimatorNS.DecorationType.None);
+            this.openAnimator.SetDecoration(this.btnAccessories, BunifuAnimatorNS.DecorationType.None);
             this.btnAccessories.Font = new System.Drawing.Font("Consolas", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAccessories.Iconcolor = System.Drawing.Color.Transparent;
             this.btnAccessories.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnAccessories.Iconimage")));
@@ -156,46 +188,17 @@
             this.btnAccessories.Iconimage_Selected = null;
             this.btnAccessories.IconZoom = 90D;
             this.btnAccessories.IsTab = false;
-            this.btnAccessories.Location = new System.Drawing.Point(2, 359);
+            this.btnAccessories.Location = new System.Drawing.Point(5, 303);
             this.btnAccessories.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAccessories.Name = "btnAccessories";
             this.btnAccessories.Normalcolor = System.Drawing.Color.Teal;
             this.btnAccessories.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
             this.btnAccessories.OnHoverTextColor = System.Drawing.Color.White;
             this.btnAccessories.selected = false;
-            this.btnAccessories.Size = new System.Drawing.Size(160, 48);
+            this.btnAccessories.Size = new System.Drawing.Size(156, 48);
             this.btnAccessories.TabIndex = 1;
             this.btnAccessories.Textcolor = System.Drawing.Color.White;
             this.btnAccessories.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            // 
-            // btnMonitor
-            // 
-            this.btnMonitor.Activecolor = System.Drawing.Color.Teal;
-            this.btnMonitor.BackColor = System.Drawing.Color.Teal;
-            this.btnMonitor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnMonitor.BorderRadius = 0;
-            this.btnMonitor.ButtonText = "Monitor";
-            this.btnMonitor.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.closeAnimator.SetDecoration(this.btnMonitor, BunifuAnimatorNS.DecorationType.None);
-            this.btnMonitor.Font = new System.Drawing.Font("Consolas", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMonitor.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnMonitor.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnMonitor.Iconimage")));
-            this.btnMonitor.Iconimage_right = null;
-            this.btnMonitor.Iconimage_right_Selected = null;
-            this.btnMonitor.Iconimage_Selected = null;
-            this.btnMonitor.IconZoom = 90D;
-            this.btnMonitor.IsTab = false;
-            this.btnMonitor.Location = new System.Drawing.Point(4, 295);
-            this.btnMonitor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btnMonitor.Name = "btnMonitor";
-            this.btnMonitor.Normalcolor = System.Drawing.Color.Teal;
-            this.btnMonitor.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.btnMonitor.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnMonitor.selected = false;
-            this.btnMonitor.Size = new System.Drawing.Size(159, 47);
-            this.btnMonitor.TabIndex = 1;
-            this.btnMonitor.Textcolor = System.Drawing.Color.White;
-            this.btnMonitor.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
             // btnLaptop
             // 
@@ -206,6 +209,7 @@
             this.btnLaptop.ButtonText = "Laptop";
             this.btnLaptop.Cursor = System.Windows.Forms.Cursors.Hand;
             this.closeAnimator.SetDecoration(this.btnLaptop, BunifuAnimatorNS.DecorationType.None);
+            this.openAnimator.SetDecoration(this.btnLaptop, BunifuAnimatorNS.DecorationType.None);
             this.btnLaptop.Font = new System.Drawing.Font("Consolas", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLaptop.Iconcolor = System.Drawing.Color.Transparent;
             this.btnLaptop.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnLaptop.Iconimage")));
@@ -235,6 +239,7 @@
             this.btnMobiledevice.ButtonText = "Mobile Devices";
             this.btnMobiledevice.Cursor = System.Windows.Forms.Cursors.Hand;
             this.closeAnimator.SetDecoration(this.btnMobiledevice, BunifuAnimatorNS.DecorationType.None);
+            this.openAnimator.SetDecoration(this.btnMobiledevice, BunifuAnimatorNS.DecorationType.None);
             this.btnMobiledevice.Font = new System.Drawing.Font("Consolas", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMobiledevice.Iconcolor = System.Drawing.Color.Transparent;
             this.btnMobiledevice.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnMobiledevice.Iconimage")));
@@ -256,6 +261,37 @@
             this.btnMobiledevice.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMobiledevice.Click += new System.EventHandler(this.btnMobiledevice_Click);
             // 
+            // bunifuSeparator1
+            // 
+            this.bunifuSeparator1.BackColor = System.Drawing.Color.Transparent;
+            this.openAnimator.SetDecoration(this.bunifuSeparator1, BunifuAnimatorNS.DecorationType.None);
+            this.closeAnimator.SetDecoration(this.bunifuSeparator1, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuSeparator1.ForeColor = System.Drawing.Color.Cornsilk;
+            this.bunifuSeparator1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
+            this.bunifuSeparator1.LineThickness = 3;
+            this.bunifuSeparator1.Location = new System.Drawing.Point(3, 58);
+            this.bunifuSeparator1.Name = "bunifuSeparator1";
+            this.bunifuSeparator1.Size = new System.Drawing.Size(190, 15);
+            this.bunifuSeparator1.TabIndex = 0;
+            this.bunifuSeparator1.Transparency = 255;
+            this.bunifuSeparator1.Vertical = false;
+            this.bunifuSeparator1.Load += new System.EventHandler(this.bunifuSeparator1_Load);
+            // 
+            // lblCategoryLabel
+            // 
+            this.lblCategoryLabel.AutoSize = true;
+            this.closeAnimator.SetDecoration(this.lblCategoryLabel, BunifuAnimatorNS.DecorationType.None);
+            this.openAnimator.SetDecoration(this.lblCategoryLabel, BunifuAnimatorNS.DecorationType.None);
+            this.lblCategoryLabel.Font = new System.Drawing.Font("Consolas", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCategoryLabel.ForeColor = System.Drawing.Color.DarkSeaGreen;
+            this.lblCategoryLabel.Location = new System.Drawing.Point(16, 7);
+            this.lblCategoryLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblCategoryLabel.Name = "lblCategoryLabel";
+            this.lblCategoryLabel.Size = new System.Drawing.Size(143, 36);
+            this.lblCategoryLabel.TabIndex = 0;
+            this.lblCategoryLabel.Text = "Category";
+            this.lblCategoryLabel.Click += new System.EventHandler(this.lblCategoryLabel_Click);
+            // 
             // btnHardware
             // 
             this.btnHardware.Activecolor = System.Drawing.Color.Teal;
@@ -265,6 +301,7 @@
             this.btnHardware.ButtonText = "Hardware";
             this.btnHardware.Cursor = System.Windows.Forms.Cursors.Hand;
             this.closeAnimator.SetDecoration(this.btnHardware, BunifuAnimatorNS.DecorationType.None);
+            this.openAnimator.SetDecoration(this.btnHardware, BunifuAnimatorNS.DecorationType.None);
             this.btnHardware.Font = new System.Drawing.Font("Consolas", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHardware.Iconcolor = System.Drawing.Color.Transparent;
             this.btnHardware.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnHardware.Iconimage")));
@@ -286,79 +323,78 @@
             this.btnHardware.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHardware.Click += new System.EventHandler(this.btnHardware_Click);
             // 
-            // bunifuSeparator1
-            // 
-            this.bunifuSeparator1.BackColor = System.Drawing.Color.Transparent;
-            this.closeAnimator.SetDecoration(this.bunifuSeparator1, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuSeparator1.ForeColor = System.Drawing.Color.Cornsilk;
-            this.bunifuSeparator1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
-            this.bunifuSeparator1.LineThickness = 3;
-            this.bunifuSeparator1.Location = new System.Drawing.Point(3, 58);
-            this.bunifuSeparator1.Name = "bunifuSeparator1";
-            this.bunifuSeparator1.Size = new System.Drawing.Size(190, 15);
-            this.bunifuSeparator1.TabIndex = 0;
-            this.bunifuSeparator1.Transparency = 255;
-            this.bunifuSeparator1.Vertical = false;
-            this.bunifuSeparator1.Load += new System.EventHandler(this.bunifuSeparator1_Load);
-            // 
-            // lblCategoryLabel
-            // 
-            this.lblCategoryLabel.AutoSize = true;
-            this.closeAnimator.SetDecoration(this.lblCategoryLabel, BunifuAnimatorNS.DecorationType.None);
-            this.lblCategoryLabel.Font = new System.Drawing.Font("Consolas", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCategoryLabel.ForeColor = System.Drawing.Color.DarkSeaGreen;
-            this.lblCategoryLabel.Location = new System.Drawing.Point(16, 7);
-            this.lblCategoryLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblCategoryLabel.Name = "lblCategoryLabel";
-            this.lblCategoryLabel.Size = new System.Drawing.Size(143, 36);
-            this.lblCategoryLabel.TabIndex = 0;
-            this.lblCategoryLabel.Text = "Category";
-            this.lblCategoryLabel.Click += new System.EventHandler(this.lblCategoryLabel_Click);
-            // 
             // panelTop
             // 
-            this.panelTop.Controls.Add(this.userNameButton);
+            this.panelTop.Controls.Add(this.btnLoginName);
+            this.panelTop.Controls.Add(this.label1);
+            this.panelTop.Controls.Add(this.lblTimer);
+            this.panelTop.Controls.Add(this.lblWelcome);
             this.panelTop.Controls.Add(this.bunifuSeparator2);
+            this.openAnimator.SetDecoration(this.panelTop, BunifuAnimatorNS.DecorationType.None);
             this.closeAnimator.SetDecoration(this.panelTop, BunifuAnimatorNS.DecorationType.None);
             this.panelTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTop.Location = new System.Drawing.Point(179, 0);
             this.panelTop.Margin = new System.Windows.Forms.Padding(2);
             this.panelTop.Name = "panelTop";
-            this.panelTop.Size = new System.Drawing.Size(820, 67);
+            this.panelTop.Size = new System.Drawing.Size(1171, 67);
             this.panelTop.TabIndex = 2;
             // 
-            // userNameButton
+            // btnLoginName
             // 
-            this.userNameButton.Activecolor = System.Drawing.Color.Transparent;
-            this.userNameButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.userNameButton.BorderRadius = 0;
-            this.userNameButton.ButtonText = "     ";
-            this.userNameButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.closeAnimator.SetDecoration(this.userNameButton, BunifuAnimatorNS.DecorationType.None);
-            this.userNameButton.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.userNameButton.Iconcolor = System.Drawing.Color.Transparent;
-            this.userNameButton.Iconimage = ((System.Drawing.Image)(resources.GetObject("userNameButton.Iconimage")));
-            this.userNameButton.Iconimage_right = null;
-            this.userNameButton.Iconimage_right_Selected = null;
-            this.userNameButton.Iconimage_Selected = null;
-            this.userNameButton.IconZoom = 90D;
-            this.userNameButton.IsTab = false;
-            this.userNameButton.Location = new System.Drawing.Point(5, 7);
-            this.userNameButton.Name = "userNameButton";
-            this.userNameButton.Normalcolor = System.Drawing.Color.Empty;
-            this.userNameButton.OnHovercolor = System.Drawing.Color.Empty;
-            this.userNameButton.OnHoverTextColor = System.Drawing.Color.White;
-            this.userNameButton.selected = false;
-            this.userNameButton.Size = new System.Drawing.Size(241, 48);
-            this.userNameButton.TabIndex = 1;
-            this.userNameButton.Textcolor = System.Drawing.Color.White;
-            this.userNameButton.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.userNameButton.Load += new System.EventHandler(this.userNameButton_Load_1);
-            this.userNameButton.Click += new System.EventHandler(this.userNameButton_Click_1);
+            this.btnLoginName.AutoSize = true;
+            this.closeAnimator.SetDecoration(this.btnLoginName, BunifuAnimatorNS.DecorationType.None);
+            this.openAnimator.SetDecoration(this.btnLoginName, BunifuAnimatorNS.DecorationType.None);
+            this.btnLoginName.Font = new System.Drawing.Font("Consolas", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLoginName.Location = new System.Drawing.Point(774, 15);
+            this.btnLoginName.Name = "btnLoginName";
+            this.btnLoginName.Size = new System.Drawing.Size(165, 32);
+            this.btnLoginName.TabIndex = 6;
+            this.btnLoginName.Text = "Login Name";
+            this.btnLoginName.Click += new System.EventHandler(this.btnLoginName_Click);
+            this.btnLoginName.Enter += new System.EventHandler(this.label2_Enter);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.closeAnimator.SetDecoration(this.label1, BunifuAnimatorNS.DecorationType.None);
+            this.openAnimator.SetDecoration(this.label1, BunifuAnimatorNS.DecorationType.None);
+            this.label1.Font = new System.Drawing.Font("Consolas", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(5, 24);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(0, 32);
+            this.label1.TabIndex = 5;
+            // 
+            // lblTimer
+            // 
+            this.lblTimer.AutoSize = true;
+            this.closeAnimator.SetDecoration(this.lblTimer, BunifuAnimatorNS.DecorationType.None);
+            this.openAnimator.SetDecoration(this.lblTimer, BunifuAnimatorNS.DecorationType.None);
+            this.lblTimer.Font = new System.Drawing.Font("Consolas", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTimer.ForeColor = System.Drawing.Color.SeaGreen;
+            this.lblTimer.Location = new System.Drawing.Point(68, 13);
+            this.lblTimer.Name = "lblTimer";
+            this.lblTimer.Size = new System.Drawing.Size(179, 43);
+            this.lblTimer.TabIndex = 4;
+            this.lblTimer.Text = "00:00:00";
+            this.lblTimer.Enter += new System.EventHandler(this.lblTimer_Enter);
+            // 
+            // lblWelcome
+            // 
+            this.lblWelcome.AutoSize = true;
+            this.closeAnimator.SetDecoration(this.lblWelcome, BunifuAnimatorNS.DecorationType.None);
+            this.openAnimator.SetDecoration(this.lblWelcome, BunifuAnimatorNS.DecorationType.None);
+            this.lblWelcome.Font = new System.Drawing.Font("Consolas", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWelcome.ForeColor = System.Drawing.Color.SeaGreen;
+            this.lblWelcome.Location = new System.Drawing.Point(332, 15);
+            this.lblWelcome.Name = "lblWelcome";
+            this.lblWelcome.Size = new System.Drawing.Size(305, 37);
+            this.lblWelcome.TabIndex = 3;
+            this.lblWelcome.Text = "Welcome to EShop";
             // 
             // bunifuSeparator2
             // 
             this.bunifuSeparator2.BackColor = System.Drawing.Color.Transparent;
+            this.openAnimator.SetDecoration(this.bunifuSeparator2, BunifuAnimatorNS.DecorationType.None);
             this.closeAnimator.SetDecoration(this.bunifuSeparator2, BunifuAnimatorNS.DecorationType.None);
             this.bunifuSeparator2.ForeColor = System.Drawing.Color.Teal;
             this.bunifuSeparator2.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
@@ -371,168 +407,129 @@
             this.bunifuSeparator2.Vertical = false;
             this.bunifuSeparator2.Load += new System.EventHandler(this.bunifuSeparator2_Load);
             // 
-            // membersBindingSource
-            // 
-            this.membersBindingSource.DataMember = "Members";
-            this.membersBindingSource.DataSource = this.shopDataSet;
-            // 
-            // shopDataSet
-            // 
-            this.shopDataSet.DataSetName = "ShopDataSet";
-            this.shopDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // membersTableAdapter
-            // 
-            this.membersTableAdapter.ClearBeforeFill = true;
-            // 
             // panleMain
             // 
-            this.panleMain.Controls.Add(this.paneluserDropDown);
+            this.panleMain.Controls.Add(this.buyGrid);
+            this.panleMain.Controls.Add(this.btnConfirm);
+            this.panleMain.Controls.Add(this.btnAddToCart);
+            this.panleMain.Controls.Add(this.txtproductQuantity);
+            this.panleMain.Controls.Add(this.txtproductId);
+            this.panleMain.Controls.Add(this.comboCategory);
+            this.panleMain.Controls.Add(this.txtQuantity);
+            this.panleMain.Controls.Add(this.metroLabel1);
+            this.panleMain.Controls.Add(this.lvlProductCategpry);
+            this.panleMain.Controls.Add(this.panelHardware);
+            this.openAnimator.SetDecoration(this.panleMain, BunifuAnimatorNS.DecorationType.None);
             this.closeAnimator.SetDecoration(this.panleMain, BunifuAnimatorNS.DecorationType.None);
             this.panleMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panleMain.Location = new System.Drawing.Point(179, 67);
             this.panleMain.Name = "panleMain";
-            this.panleMain.Size = new System.Drawing.Size(820, 633);
+            this.panleMain.Size = new System.Drawing.Size(1171, 633);
             this.panleMain.TabIndex = 3;
+            this.panleMain.Paint += new System.Windows.Forms.PaintEventHandler(this.panleMain_Paint);
             // 
-            // paneluserDropDown
+            // panelHardware
             // 
-            this.paneluserDropDown.Controls.Add(this.picboxClose);
-            this.paneluserDropDown.Controls.Add(this.bunifuFlatButton4);
-            this.paneluserDropDown.Controls.Add(this.bunifuFlatButton3);
-            this.paneluserDropDown.Controls.Add(this.bunifuFlatButton2);
-            this.paneluserDropDown.Controls.Add(this.bunifuFlatButton1);
-            this.closeAnimator.SetDecoration(this.paneluserDropDown, BunifuAnimatorNS.DecorationType.None);
-            this.paneluserDropDown.Location = new System.Drawing.Point(5, 12);
-            this.paneluserDropDown.Name = "paneluserDropDown";
-            this.paneluserDropDown.Size = new System.Drawing.Size(241, 274);
-            this.paneluserDropDown.TabIndex = 0;
-            this.paneluserDropDown.Visible = false;
+            this.panelHardware.Controls.Add(this.panelHarawareData);
+            this.openAnimator.SetDecoration(this.panelHardware, BunifuAnimatorNS.DecorationType.None);
+            this.closeAnimator.SetDecoration(this.panelHardware, BunifuAnimatorNS.DecorationType.None);
+            this.panelHardware.Location = new System.Drawing.Point(5, 3);
+            this.panelHardware.Name = "panelHardware";
+            this.panelHardware.Size = new System.Drawing.Size(721, 583);
+            this.panelHardware.TabIndex = 5;
             // 
-            // bunifuFlatButton1
+            // panelHarawareData
             // 
-            this.bunifuFlatButton1.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton1.BackColor = System.Drawing.Color.SeaGreen;
-            this.bunifuFlatButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuFlatButton1.BorderRadius = 0;
-            this.bunifuFlatButton1.ButtonText = "     Bunifu Flat Button";
-            this.bunifuFlatButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.closeAnimator.SetDecoration(this.bunifuFlatButton1, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuFlatButton1.Iconcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton1.Iconimage = ((System.Drawing.Image)(resources.GetObject("bunifuFlatButton1.Iconimage")));
-            this.bunifuFlatButton1.Iconimage_right = null;
-            this.bunifuFlatButton1.Iconimage_right_Selected = null;
-            this.bunifuFlatButton1.Iconimage_Selected = null;
-            this.bunifuFlatButton1.IconZoom = 90D;
-            this.bunifuFlatButton1.IsTab = false;
-            this.bunifuFlatButton1.Location = new System.Drawing.Point(-2, 0);
-            this.bunifuFlatButton1.Name = "bunifuFlatButton1";
-            this.bunifuFlatButton1.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton1.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.bunifuFlatButton1.OnHoverTextColor = System.Drawing.Color.White;
-            this.bunifuFlatButton1.selected = false;
-            this.bunifuFlatButton1.Size = new System.Drawing.Size(241, 48);
-            this.bunifuFlatButton1.TabIndex = 0;
-            this.bunifuFlatButton1.Textcolor = System.Drawing.Color.White;
-            this.bunifuFlatButton1.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panelHarawareData.Controls.Add(this.seacrchHaradware);
+            this.panelHarawareData.Controls.Add(this.hardwareDataGridView);
+            this.openAnimator.SetDecoration(this.panelHarawareData, BunifuAnimatorNS.DecorationType.None);
+            this.closeAnimator.SetDecoration(this.panelHarawareData, BunifuAnimatorNS.DecorationType.None);
+            this.panelHarawareData.Location = new System.Drawing.Point(3, 3);
+            this.panelHarawareData.Name = "panelHarawareData";
+            this.panelHarawareData.Size = new System.Drawing.Size(748, 581);
+            this.panelHarawareData.TabIndex = 0;
+            this.panelHarawareData.Visible = false;
+            this.panelHarawareData.Paint += new System.Windows.Forms.PaintEventHandler(this.panelHarawareData_Paint);
             // 
-            // bunifuFlatButton2
+            // seacrchHaradware
             // 
-            this.bunifuFlatButton2.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuFlatButton2.BorderRadius = 0;
-            this.bunifuFlatButton2.ButtonText = "     Bunifu Flat Button";
-            this.bunifuFlatButton2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.closeAnimator.SetDecoration(this.bunifuFlatButton2, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuFlatButton2.Iconcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton2.Iconimage = ((System.Drawing.Image)(resources.GetObject("bunifuFlatButton2.Iconimage")));
-            this.bunifuFlatButton2.Iconimage_right = null;
-            this.bunifuFlatButton2.Iconimage_right_Selected = null;
-            this.bunifuFlatButton2.Iconimage_Selected = null;
-            this.bunifuFlatButton2.IconZoom = 90D;
-            this.bunifuFlatButton2.IsTab = false;
-            this.bunifuFlatButton2.Location = new System.Drawing.Point(0, 54);
-            this.bunifuFlatButton2.Name = "bunifuFlatButton2";
-            this.bunifuFlatButton2.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton2.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.bunifuFlatButton2.OnHoverTextColor = System.Drawing.Color.White;
-            this.bunifuFlatButton2.selected = false;
-            this.bunifuFlatButton2.Size = new System.Drawing.Size(241, 48);
-            this.bunifuFlatButton2.TabIndex = 0;
-            this.bunifuFlatButton2.Textcolor = System.Drawing.Color.White;
-            this.bunifuFlatButton2.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.openAnimator.SetDecoration(this.seacrchHaradware, BunifuAnimatorNS.DecorationType.None);
+            this.closeAnimator.SetDecoration(this.seacrchHaradware, BunifuAnimatorNS.DecorationType.None);
+            this.seacrchHaradware.Dock = System.Windows.Forms.DockStyle.None;
+            this.seacrchHaradware.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.productnameToolStripLabel,
+            this.productnameToolStripTextBox,
+            this.seacrchToolStripButton});
+            this.seacrchHaradware.Location = new System.Drawing.Point(384, 34);
+            this.seacrchHaradware.Name = "seacrchHaradware";
+            this.seacrchHaradware.Size = new System.Drawing.Size(248, 25);
+            this.seacrchHaradware.TabIndex = 4;
+            this.seacrchHaradware.Text = "seacrchToolStrip";
             // 
-            // bunifuFlatButton3
+            // productnameToolStripLabel
             // 
-            this.bunifuFlatButton3.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuFlatButton3.BorderRadius = 0;
-            this.bunifuFlatButton3.ButtonText = "     Bunifu Flat Button";
-            this.bunifuFlatButton3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.closeAnimator.SetDecoration(this.bunifuFlatButton3, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuFlatButton3.Iconcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton3.Iconimage = ((System.Drawing.Image)(resources.GetObject("bunifuFlatButton3.Iconimage")));
-            this.bunifuFlatButton3.Iconimage_right = null;
-            this.bunifuFlatButton3.Iconimage_right_Selected = null;
-            this.bunifuFlatButton3.Iconimage_Selected = null;
-            this.bunifuFlatButton3.IconZoom = 90D;
-            this.bunifuFlatButton3.IsTab = false;
-            this.bunifuFlatButton3.Location = new System.Drawing.Point(0, 108);
-            this.bunifuFlatButton3.Name = "bunifuFlatButton3";
-            this.bunifuFlatButton3.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton3.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.bunifuFlatButton3.OnHoverTextColor = System.Drawing.Color.White;
-            this.bunifuFlatButton3.selected = false;
-            this.bunifuFlatButton3.Size = new System.Drawing.Size(241, 48);
-            this.bunifuFlatButton3.TabIndex = 0;
-            this.bunifuFlatButton3.Textcolor = System.Drawing.Color.White;
-            this.bunifuFlatButton3.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.productnameToolStripLabel.Name = "productnameToolStripLabel";
+            this.productnameToolStripLabel.Size = new System.Drawing.Size(82, 22);
+            this.productnameToolStripLabel.Text = "productname:";
             // 
-            // bunifuFlatButton4
+            // productnameToolStripTextBox
             // 
-            this.bunifuFlatButton4.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuFlatButton4.BorderRadius = 0;
-            this.bunifuFlatButton4.ButtonText = "     Bunifu Flat Button";
-            this.bunifuFlatButton4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.closeAnimator.SetDecoration(this.bunifuFlatButton4, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuFlatButton4.Iconcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton4.Iconimage = ((System.Drawing.Image)(resources.GetObject("bunifuFlatButton4.Iconimage")));
-            this.bunifuFlatButton4.Iconimage_right = null;
-            this.bunifuFlatButton4.Iconimage_right_Selected = null;
-            this.bunifuFlatButton4.Iconimage_Selected = null;
-            this.bunifuFlatButton4.IconZoom = 90D;
-            this.bunifuFlatButton4.IsTab = false;
-            this.bunifuFlatButton4.Location = new System.Drawing.Point(0, 162);
-            this.bunifuFlatButton4.Name = "bunifuFlatButton4";
-            this.bunifuFlatButton4.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton4.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.bunifuFlatButton4.OnHoverTextColor = System.Drawing.Color.White;
-            this.bunifuFlatButton4.selected = false;
-            this.bunifuFlatButton4.Size = new System.Drawing.Size(241, 48);
-            this.bunifuFlatButton4.TabIndex = 0;
-            this.bunifuFlatButton4.Textcolor = System.Drawing.Color.White;
-            this.bunifuFlatButton4.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.productnameToolStripTextBox.Name = "productnameToolStripTextBox";
+            this.productnameToolStripTextBox.Size = new System.Drawing.Size(100, 25);
+            this.productnameToolStripTextBox.Click += new System.EventHandler(this.productnameToolStripTextBox_Click);
             // 
-            // picboxClose
+            // seacrchToolStripButton
             // 
-            this.picboxClose.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.closeAnimator.SetDecoration(this.picboxClose, BunifuAnimatorNS.DecorationType.None);
-            this.picboxClose.Image = ((System.Drawing.Image)(resources.GetObject("picboxClose.Image")));
-            this.picboxClose.Location = new System.Drawing.Point(188, 224);
-            this.picboxClose.Name = "picboxClose";
-            this.picboxClose.Size = new System.Drawing.Size(50, 47);
-            this.picboxClose.TabIndex = 1;
-            this.picboxClose.TabStop = false;
-            this.picboxClose.Click += new System.EventHandler(this.picboxClose_Click);
+            this.seacrchToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.seacrchToolStripButton.Name = "seacrchToolStripButton";
+            this.seacrchToolStripButton.Size = new System.Drawing.Size(52, 22);
+            this.seacrchToolStripButton.Text = "Seacrch";
+            this.seacrchToolStripButton.Click += new System.EventHandler(this.seacrchToolStripButton_Click);
+            // 
+            // hardwareDataGridView
+            // 
+            this.hardwareDataGridView.AutoGenerateColumns = false;
+            this.hardwareDataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(50)))), ((int)(((byte)(63)))));
+            this.hardwareDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.hardwareDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewTextBoxColumn5});
+            this.hardwareDataGridView.DataSource = this.hardwareBindingSource1;
+            this.openAnimator.SetDecoration(this.hardwareDataGridView, BunifuAnimatorNS.DecorationType.None);
+            this.closeAnimator.SetDecoration(this.hardwareDataGridView, BunifuAnimatorNS.DecorationType.None);
+            this.hardwareDataGridView.Location = new System.Drawing.Point(24, 68);
+            this.hardwareDataGridView.Name = "hardwareDataGridView";
+            this.hardwareDataGridView.Size = new System.Drawing.Size(614, 486);
+            this.hardwareDataGridView.TabIndex = 0;
             // 
             // closeAnimator
             // 
-            this.closeAnimator.AnimationType = BunifuAnimatorNS.AnimationType.VertSlide;
+            this.closeAnimator.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlideAndRotate;
             this.closeAnimator.Cursor = null;
+            animation2.AnimateOnlyDifferences = true;
+            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
+            animation2.LeafCoeff = 0F;
+            animation2.MaxTime = 1F;
+            animation2.MinTime = 0F;
+            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
+            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
+            animation2.MosaicSize = 0;
+            animation2.Padding = new System.Windows.Forms.Padding(50);
+            animation2.RotateCoeff = 0.3F;
+            animation2.RotateLimit = 0.2F;
+            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
+            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
+            animation2.TimeCoeff = 0F;
+            animation2.TransparencyCoeff = 0F;
+            this.closeAnimator.DefaultAnimation = animation2;
+            // 
+            // openAnimator
+            // 
+            this.openAnimator.AnimationType = BunifuAnimatorNS.AnimationType.VertSlide;
+            this.openAnimator.Cursor = null;
             animation1.AnimateOnlyDifferences = true;
             animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
             animation1.LeafCoeff = 0F;
@@ -541,26 +538,249 @@
             animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
             animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
             animation1.MosaicSize = 0;
-            animation1.Padding = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            animation1.Padding = new System.Windows.Forms.Padding(0);
             animation1.RotateCoeff = 0F;
             animation1.RotateLimit = 0F;
             animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
             animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
             animation1.TimeCoeff = 0F;
             animation1.TransparencyCoeff = 0F;
-            this.closeAnimator.DefaultAnimation = animation1;
+            this.openAnimator.DefaultAnimation = animation1;
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // hardwareBindingSource
+            // 
+            this.hardwareBindingSource.DataMember = "Hardware";
+            // 
+            // mobileDeviceBindingSource
+            // 
+            this.mobileDeviceBindingSource.DataMember = "MobileDevice";
+            // 
+            // lvlProductCategpry
+            // 
+            this.lvlProductCategpry.AutoSize = true;
+            this.openAnimator.SetDecoration(this.lvlProductCategpry, BunifuAnimatorNS.DecorationType.None);
+            this.closeAnimator.SetDecoration(this.lvlProductCategpry, BunifuAnimatorNS.DecorationType.None);
+            this.lvlProductCategpry.Location = new System.Drawing.Point(771, 91);
+            this.lvlProductCategpry.Name = "lvlProductCategpry";
+            this.lvlProductCategpry.Size = new System.Drawing.Size(114, 19);
+            this.lvlProductCategpry.TabIndex = 6;
+            this.lvlProductCategpry.Text = "Product Category";
+            // 
+            // metroLabel1
+            // 
+            this.metroLabel1.AutoSize = true;
+            this.openAnimator.SetDecoration(this.metroLabel1, BunifuAnimatorNS.DecorationType.None);
+            this.closeAnimator.SetDecoration(this.metroLabel1, BunifuAnimatorNS.DecorationType.None);
+            this.metroLabel1.Location = new System.Drawing.Point(771, 157);
+            this.metroLabel1.Name = "metroLabel1";
+            this.metroLabel1.Size = new System.Drawing.Size(70, 19);
+            this.metroLabel1.TabIndex = 6;
+            this.metroLabel1.Text = "Product Id";
+            // 
+            // txtQuantity
+            // 
+            this.txtQuantity.AutoSize = true;
+            this.openAnimator.SetDecoration(this.txtQuantity, BunifuAnimatorNS.DecorationType.None);
+            this.closeAnimator.SetDecoration(this.txtQuantity, BunifuAnimatorNS.DecorationType.None);
+            this.txtQuantity.Location = new System.Drawing.Point(771, 203);
+            this.txtQuantity.Name = "txtQuantity";
+            this.txtQuantity.Size = new System.Drawing.Size(108, 19);
+            this.txtQuantity.TabIndex = 6;
+            this.txtQuantity.Text = "Product Quantity";
+            // 
+            // comboCategory
+            // 
+            this.openAnimator.SetDecoration(this.comboCategory, BunifuAnimatorNS.DecorationType.None);
+            this.closeAnimator.SetDecoration(this.comboCategory, BunifuAnimatorNS.DecorationType.None);
+            this.comboCategory.FormattingEnabled = true;
+            this.comboCategory.ItemHeight = 23;
+            this.comboCategory.Items.AddRange(new object[] {
+            "Accessories",
+            "Games",
+            "Hardware",
+            "Laptops",
+            "MobileDevice"});
+            this.comboCategory.Location = new System.Drawing.Point(922, 81);
+            this.comboCategory.Name = "comboCategory";
+            this.comboCategory.Size = new System.Drawing.Size(121, 29);
+            this.comboCategory.TabIndex = 7;
+            this.comboCategory.UseSelectable = true;
+            // 
+            // txtproductId
+            // 
+            // 
+            // 
+            // 
+            this.txtproductId.CustomButton.Image = null;
+            this.txtproductId.CustomButton.Location = new System.Drawing.Point(106, 1);
+            this.txtproductId.CustomButton.Name = "";
+            this.txtproductId.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.txtproductId.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txtproductId.CustomButton.TabIndex = 1;
+            this.txtproductId.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txtproductId.CustomButton.UseSelectable = true;
+            this.txtproductId.CustomButton.Visible = false;
+            this.openAnimator.SetDecoration(this.txtproductId, BunifuAnimatorNS.DecorationType.None);
+            this.closeAnimator.SetDecoration(this.txtproductId, BunifuAnimatorNS.DecorationType.None);
+            this.txtproductId.Lines = new string[0];
+            this.txtproductId.Location = new System.Drawing.Point(922, 153);
+            this.txtproductId.MaxLength = 32767;
+            this.txtproductId.Name = "txtproductId";
+            this.txtproductId.PasswordChar = '\0';
+            this.txtproductId.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtproductId.SelectedText = "";
+            this.txtproductId.SelectionLength = 0;
+            this.txtproductId.SelectionStart = 0;
+            this.txtproductId.ShortcutsEnabled = true;
+            this.txtproductId.Size = new System.Drawing.Size(128, 23);
+            this.txtproductId.TabIndex = 8;
+            this.txtproductId.UseSelectable = true;
+            this.txtproductId.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txtproductId.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // txtproductQuantity
+            // 
+            // 
+            // 
+            // 
+            this.txtproductQuantity.CustomButton.Image = null;
+            this.txtproductQuantity.CustomButton.Location = new System.Drawing.Point(106, 1);
+            this.txtproductQuantity.CustomButton.Name = "";
+            this.txtproductQuantity.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.txtproductQuantity.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txtproductQuantity.CustomButton.TabIndex = 1;
+            this.txtproductQuantity.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txtproductQuantity.CustomButton.UseSelectable = true;
+            this.txtproductQuantity.CustomButton.Visible = false;
+            this.openAnimator.SetDecoration(this.txtproductQuantity, BunifuAnimatorNS.DecorationType.None);
+            this.closeAnimator.SetDecoration(this.txtproductQuantity, BunifuAnimatorNS.DecorationType.None);
+            this.txtproductQuantity.Lines = new string[0];
+            this.txtproductQuantity.Location = new System.Drawing.Point(922, 199);
+            this.txtproductQuantity.MaxLength = 32767;
+            this.txtproductQuantity.Name = "txtproductQuantity";
+            this.txtproductQuantity.PasswordChar = '\0';
+            this.txtproductQuantity.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtproductQuantity.SelectedText = "";
+            this.txtproductQuantity.SelectionLength = 0;
+            this.txtproductQuantity.SelectionStart = 0;
+            this.txtproductQuantity.ShortcutsEnabled = true;
+            this.txtproductQuantity.Size = new System.Drawing.Size(128, 23);
+            this.txtproductQuantity.TabIndex = 9;
+            this.txtproductQuantity.UseSelectable = true;
+            this.txtproductQuantity.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txtproductQuantity.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // btnAddToCart
+            // 
+            this.openAnimator.SetDecoration(this.btnAddToCart, BunifuAnimatorNS.DecorationType.None);
+            this.closeAnimator.SetDecoration(this.btnAddToCart, BunifuAnimatorNS.DecorationType.None);
+            this.btnAddToCart.Location = new System.Drawing.Point(771, 261);
+            this.btnAddToCart.Name = "btnAddToCart";
+            this.btnAddToCart.Size = new System.Drawing.Size(114, 23);
+            this.btnAddToCart.TabIndex = 10;
+            this.btnAddToCart.Text = "Add To Cart";
+            this.btnAddToCart.UseSelectable = true;
+            this.btnAddToCart.Click += new System.EventHandler(this.btnAddToCart_Click_1);
+            // 
+            // btnConfirm
+            // 
+            this.openAnimator.SetDecoration(this.btnConfirm, BunifuAnimatorNS.DecorationType.None);
+            this.closeAnimator.SetDecoration(this.btnConfirm, BunifuAnimatorNS.DecorationType.None);
+            this.btnConfirm.Location = new System.Drawing.Point(936, 261);
+            this.btnConfirm.Name = "btnConfirm";
+            this.btnConfirm.Size = new System.Drawing.Size(114, 23);
+            this.btnConfirm.TabIndex = 10;
+            this.btnConfirm.Text = "Confirm Purchase";
+            this.btnConfirm.UseSelectable = true;
+            this.btnConfirm.Click += new System.EventHandler(this.btnConfirm_Click);
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "Id";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Id";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "productname";
+            this.dataGridViewTextBoxColumn2.HeaderText = "productname";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.Width = 150;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "productprice";
+            this.dataGridViewTextBoxColumn3.HeaderText = "productprice";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.Width = 120;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "productavailabale";
+            this.dataGridViewTextBoxColumn4.HeaderText = "productavailabale";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "productstatus";
+            this.dataGridViewTextBoxColumn5.HeaderText = "productstatus";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            // 
+            // hardwareBindingSource1
+            // 
+            this.hardwareBindingSource1.DataMember = "Hardware";
+            this.hardwareBindingSource1.DataSource = this.shopData;
+            // 
+            // shopData
+            // 
+            this.shopData.DataSetName = "shopData";
+            this.shopData.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // hardwareTableAdapter
+            // 
+            this.hardwareTableAdapter.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.AccessoriesTableAdapter = null;
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.GamesTableAdapter = null;
+            this.tableAdapterManager.HardwareTableAdapter = this.hardwareTableAdapter;
+            this.tableAdapterManager.LaptopsTableAdapter = null;
+            this.tableAdapterManager.MembersTableAdapter = null;
+            this.tableAdapterManager.MobileDeviceTableAdapter = null;
+            this.tableAdapterManager.UpdateOrder = ManagementSystem.shopDataTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            // 
+            // buyGrid
+            // 
+            this.buyGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.openAnimator.SetDecoration(this.buyGrid, BunifuAnimatorNS.DecorationType.None);
+            this.closeAnimator.SetDecoration(this.buyGrid, BunifuAnimatorNS.DecorationType.None);
+            this.buyGrid.Location = new System.Drawing.Point(771, 306);
+            this.buyGrid.Name = "buyGrid";
+            this.buyGrid.Size = new System.Drawing.Size(286, 150);
+            this.buyGrid.TabIndex = 11;
+            this.buyGrid.Visible = false;
             // 
             // MainPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(50)))), ((int)(((byte)(63)))));
-            this.ClientSize = new System.Drawing.Size(999, 700);
+            this.ClientSize = new System.Drawing.Size(1350, 700);
             this.Controls.Add(this.panleMain);
             this.Controls.Add(this.panelTop);
             this.Controls.Add(this.panelSidebar);
             this.Controls.Add(this.doubleBitmapControl1);
             this.closeAnimator.SetDecoration(this, BunifuAnimatorNS.DecorationType.None);
+            this.openAnimator.SetDecoration(this, BunifuAnimatorNS.DecorationType.None);
             this.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(2);
@@ -570,11 +790,20 @@
             this.panelSidebar.ResumeLayout(false);
             this.panelSidebar.PerformLayout();
             this.panelTop.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.membersBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.shopDataSet)).EndInit();
+            this.panelTop.PerformLayout();
             this.panleMain.ResumeLayout(false);
-            this.paneluserDropDown.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.picboxClose)).EndInit();
+            this.panleMain.PerformLayout();
+            this.panelHardware.ResumeLayout(false);
+            this.panelHarawareData.ResumeLayout(false);
+            this.panelHarawareData.PerformLayout();
+            this.seacrchHaradware.ResumeLayout(false);
+            this.seacrchHaradware.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.hardwareDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hardwareBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mobileDeviceBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hardwareBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shopData)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.buyGrid)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -589,22 +818,47 @@
         private Bunifu.Framework.UI.BunifuFlatButton btnHardware;
         private Bunifu.Framework.UI.BunifuFlatButton btnGames;
         private Bunifu.Framework.UI.BunifuFlatButton btnAccessories;
-        private Bunifu.Framework.UI.BunifuFlatButton btnMonitor;
         private Bunifu.Framework.UI.BunifuFlatButton btnLaptop;
         private Bunifu.Framework.UI.BunifuFlatButton btnMobiledevice;
         private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator2;
         private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator3;
-        private ShopDataSet shopDataSet;
-        private System.Windows.Forms.BindingSource membersBindingSource;
-        private ShopDataSetTableAdapters.MembersTableAdapter membersTableAdapter;
-        private Bunifu.Framework.UI.BunifuFlatButton userNameButton;
         private System.Windows.Forms.Panel panleMain;
-        private System.Windows.Forms.Panel paneluserDropDown;
-        private System.Windows.Forms.PictureBox picboxClose;
-        private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton4;
-        private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton3;
-        private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton2;
-        private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton1;
         private BunifuAnimatorNS.Animator closeAnimator;
+        private BunifuAnimatorNS.Animator openAnimator;
+        private System.Windows.Forms.Label lblWelcome;
+        private System.Windows.Forms.Label lblTimer;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label btnLoginName;
+       
+        private System.Windows.Forms.BindingSource mobileDeviceBindingSource;
+        
+        private System.Windows.Forms.Panel panelHardware;
+       
+        private System.Windows.Forms.BindingSource hardwareBindingSource;
+        private System.Windows.Forms.Panel panelHarawareData;
+        private shopData shopData;
+        private System.Windows.Forms.BindingSource hardwareBindingSource1;
+        private shopDataTableAdapters.HardwareTableAdapter hardwareTableAdapter;
+        private shopDataTableAdapters.TableAdapterManager tableAdapterManager;
+        private System.Windows.Forms.DataGridView hardwareDataGridView;
+        private System.Windows.Forms.ToolStrip seacrchHaradware;
+        private System.Windows.Forms.ToolStripLabel productnameToolStripLabel;
+        private System.Windows.Forms.ToolStripTextBox productnameToolStripTextBox;
+        private System.Windows.Forms.ToolStripButton seacrchToolStripButton;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private MetroFramework.Controls.MetroButton btnConfirm;
+        private MetroFramework.Controls.MetroButton btnAddToCart;
+        private MetroFramework.Controls.MetroTextBox txtproductQuantity;
+        private MetroFramework.Controls.MetroTextBox txtproductId;
+        private MetroFramework.Controls.MetroComboBox comboCategory;
+        private MetroFramework.Controls.MetroLabel txtQuantity;
+        private MetroFramework.Controls.MetroLabel metroLabel1;
+        private MetroFramework.Controls.MetroLabel lvlProductCategpry;
+        private System.Windows.Forms.DataGridView buyGrid;
     }
 }

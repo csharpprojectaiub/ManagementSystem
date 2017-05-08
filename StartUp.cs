@@ -39,21 +39,35 @@ namespace ManagementSystem
 
         private void btnSignUp_Click(object sender, EventArgs e)
         {
+          
             string firstName = txtFieldFirstName.text;
             string lastName = txtFieldLastName.text;
              username = txtFieldUserName.text;
             string password = txtFieldPassword.text;
             string contactNumber = txtFieldContactNumber.text;
-            SqlConnection con = new SqlConnection(connectionString);
+            if (firstName == "" || lastName == "" || username == "" || password == "" || contactNumber == "")
+            {
+                MessageBox.Show("Field not be empty");
+            }
+            else if(username=="admin"||username=="ADMIN")
+            {
+                MessageBox.Show("sorry Can not Sign Up as admin");
+            }
+            else {
+                SqlConnection con = new SqlConnection(connectionString);
             con.Open( );
             string sql = "INSERT INTO Members(firstname,lastname,username,password,contactnumber)   values('" + firstName + "','"+lastName+"','"+username+"','"+password+"','"+contactNumber+"')";
             SqlCommand cmd = new SqlCommand(sql,con);
             cmd.ExecuteNonQuery();
             MessageBox.Show("Registered");
+                panelSignUp.Visible = false;
+                panelSignIn.Visible = true;
+                
 
         }
-       
-        
+        }
+
+
 
         private void btnSignIn_Click(object sender, EventArgs e)
         {
@@ -66,37 +80,75 @@ namespace ManagementSystem
             }
            
             con.Open();
-            try
+            if (username == "admin")
             {
-                string sql = "select *from Members where username='"+username+"' and password = '"+password+"' ";
-                cmd = new SqlCommand(sql, con);
-               
-                dataReader = cmd.ExecuteReader();
-                int count = 0;
-                while (dataReader.Read())
+                try
                 {
-                    count += 1;
+                    string sql = "select *from Members where username='" + username + "' and password = '" + password + "' ";
+                    cmd = new SqlCommand(sql, con);
+
+                    dataReader = cmd.ExecuteReader();
+                    int count = 0;
+                    while (dataReader.Read())
+                    {
+                        count += 1;
+                    }
+                    if (count == 1)
+                    {
+                        this.Hide();
+
+                        Admin admin = new Admin(username);
+                        admin.Show();
+                    }
+                    else
+                    {
+                        MessageBox.Show("error");
+                    }
                 }
-                if(count==1)
+                catch (Exception ex)
                 {
-                    this.Hide();
-    
-                    MainPage mainpage = new MainPage(username);
-                    mainpage.Show();
+
                 }
-                else
+                finally
                 {
-                    MessageBox.Show("error");
+                    con.Close();
+
                 }
             }
-            catch(Exception ex)
+            else
             {
-                
-            }
-            finally
-            {
-                con.Close();
-    
+                try
+                {
+                    string sql = "select *from Members where username='" + username + "' and password = '" + password + "' ";
+                    cmd = new SqlCommand(sql, con);
+
+                    dataReader = cmd.ExecuteReader();
+                    int count = 0;
+                    while (dataReader.Read())
+                    {
+                        count += 1;
+                    }
+                    if (count == 1)
+                    {
+                        this.Hide();
+
+                        MainPage mainpage = new MainPage(username);
+                        mainpage.Show();
+                    }
+                    else
+                    {
+                        MessageBox.Show("error");
+                    }
+                }
+                catch (Exception ex)
+                {
+
+                }
+                finally
+                {
+                    con.Close();
+
+                }
             }
         }
 
